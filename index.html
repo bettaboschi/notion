@@ -1,5 +1,4 @@
-  
-<!-- original : https://codepen.io/SeanNorton/pen/LWBXQL -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +38,7 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #c49da0;
+    background: #009688;
     color: #fff;
     display: inline-block;
     box-shadow: 2px 2px 1px 0px #295C7B;
@@ -126,12 +125,12 @@ else{
     seconds+=" am"
 }
 hrs = today.getHours();
-if (hrs < 13)
-        greet = 'GM';
-    else if (hrs >= 13 && hrs <= 19)
-        greet = 'GA;
-    else if (hrs >= 19 && hrs <= 24)
-        greet = 'GE';
+if (hrs < 12)
+        greet = 'M ';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'A ';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'E  ';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
